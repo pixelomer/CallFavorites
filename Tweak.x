@@ -9,7 +9,7 @@ int CTCallDial(NSString *phoneNumber);
 @end
 
 @interface SBIconView : UIView
-@property (nonatomic,retain) SBIcon *icon; 
+@property (nonatomic, strong) SBIcon *icon; 
 @end
 
 @interface SBIconViewContextMenuContext : NSObject<NSCopying>
@@ -89,3 +89,9 @@ int CTCallDial(NSString *phoneNumber);
 }
 
 %end
+
+%ctor {
+	if (@available(iOS 14.0, *)) {
+		%init;
+	}
+}
