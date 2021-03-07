@@ -1,0 +1,13 @@
+Package: com.pixelomer.callfavorites
+Name: CallFavorites
+Version: 1.0
+Architecture: iphoneos-arm
+Description: Favorites in the 3D Touch menu for the Phone app
+  iOS 14 completely removed the Phone widget, making it harder to access your favorite contacts. This tweak brings your favorite contacts back to the 3D touch menu.
+  .
+  Requires iOS 14.0 or later.
+  This feature is built into older versions of iOS.
+Maintainer: pixelomer
+Author: pixelomer
+Section: Tweaks
+Depends: mobilesubstrate (>= 0.9.5000)
