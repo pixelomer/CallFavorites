@@ -1,7 +1,8 @@
-TARGET := iphone:clang:latest:13.0
+TARGET := iphone:clang:latest:14.0
 INSTALL_TARGET_PROCESSES = SpringBoard
 ARCHS = arm64 arm64e
-export TARGET ARCHS
+PREFIX = $(THEOS)/toolchain/Xcode11_7.xctoolchain/usr/bin/
+export TARGET ARCHS PREFIX
 
 include $(THEOS)/makefiles/common.mk
 
